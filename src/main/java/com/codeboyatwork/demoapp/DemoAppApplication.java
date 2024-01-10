@@ -1,4 +1,4 @@
-package com.codeboyatwork.demoApp;
+package com.codeboyatwork.demoapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
