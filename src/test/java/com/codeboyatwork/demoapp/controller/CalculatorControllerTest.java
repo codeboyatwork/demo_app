@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(value = UserController.class)
+@WebMvcTest(value = CalculatorController.class)
 class CalculatorControllerTest {
 
     @Autowired
