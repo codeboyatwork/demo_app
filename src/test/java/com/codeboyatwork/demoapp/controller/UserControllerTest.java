@@ -21,7 +21,7 @@ import java.util.List;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(value = UserController.class)
-public class UserControllerTest {
+class UserControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -32,7 +32,7 @@ public class UserControllerTest {
     private User[] users = new User[]{};
 
     @Test
-        public void getAllUsers() throws Exception {
+    void getAllUsers() throws Exception {
         Mockito.when(userSerivce.getAllUsers()).thenReturn(List.of(users));
 
         RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
