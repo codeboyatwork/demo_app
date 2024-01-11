@@ -1,8 +1,8 @@
 package com.codeboyatwork.demoapp.controller;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
@@ -29,7 +29,7 @@ class CalculatorControllerTest {
         MvcResult result = mockMvc.perform(requestBuilder).andReturn();
 
         String expected = "This is a Calculator";
-        JSONAssert.assertEquals(expected,result.getResponse().getContentAsString(), false);
+        Assertions.assertEquals(expected, result.getResponse().getContentAsString());
     }
 
 }
